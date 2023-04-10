@@ -154,8 +154,11 @@ nav ul li a:hover {
     background: #FFFFFF;
     box-shadow: 23px 44px 47px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    transition: 0.3s linear;
 }
-
+.cards_shadow:hover{
+    transform: translateY(-9px);
+}
 .footlocker_img_border {
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.08);

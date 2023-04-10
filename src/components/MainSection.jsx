@@ -17,6 +17,10 @@ const MainSection = () => {
         autoplaySpeed: 700,
         responsive: [
             {
+                breakpoint: 8000,
+                settings:"unslick",
+            },
+            {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
@@ -46,7 +50,7 @@ const MainSection = () => {
             <Container>
                 <h2 className='fs_2xl fw-semibold ff_poppins mt-5'>You can buy the Nike Air Max 97 Men's Shoe - White here:</h2>
 
-                <Slider {...settings}>
+                <Slider {...settings} className='d-flex row'>
                     <Col className='py-5 mb-5'>
                         <div className="cards_shadow mx-2">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
