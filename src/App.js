@@ -15,11 +15,9 @@ import Preloader from './components/Preloader';
 function App() {
   return (
     <>
-      <div className='d-flex flex-column vh_100_lg'>
-        <MyNavBar />
-        <Header />
-      </div>
-      <Preloader/>
+      <MyNavBar />
+      <Header />
+      <Preloader />
       <BackToTop />
       <MainSection />
       <Reviews />

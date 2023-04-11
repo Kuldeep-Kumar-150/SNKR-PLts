@@ -8,9 +8,9 @@ const Reviews = () => {
             <Container>
                 <div>
                     <div className="d-flex flex-column flex-md-row align-items-start justify-content-md-evenly justify-content-lg-start">
-                        <button onClick={() => setfirst(1)} className='description_btns position-relative fs_lg fw-normal ff_poppins border-0 bg-transparent'>DESCRIPTION</button>
-                        <button onClick={() => setfirst(2)} className='description_btns position-relative fs_lg fw-normal ff_poppins mx-lg-5 my-3 my-md-0 border-0 bg-transparent'>ADDITIONAL INFORMATION</button>
-                        <button onClick={() => setfirst(3)} className='description_btns position-relative fs_lg fw-normal ff_poppins border-0 bg-transparent'>REVIEWS (1)</button>
+                        <button className={first === 1 ? "description_btns color_pink position-relative fs_lg fw-normal ff_poppins border-0 bg-transparent me-4" : "border-0 bg-transparent me-4 fs_lg fw-normal ff_poppins"} onClick={() => setfirst(1)}>DESCRIPTION</button>
+                        <button className={first === 2 ? "description_btns color_pink position-relative fs_lg fw-normal ff_poppins border-0 bg-transparent mx-4" : "border-0 bg-transparent mx-4 fs_lg fw-normal ff_poppins"} onClick={() => setfirst(2)}>ADDITIONAL INFORMATION</button>
+                        <button className={first === 3 ? "description_btns color_pink position-relative fs_lg fw-normal ff_poppins border-0 bg-transparent mx-4" : "border-0 bg-transparent mx-4 fs_lg fw-normal ff_poppins"} onClick={() => setfirst(3)}>REVIEWS (1)</button>
                     </div>
                     <div className={first == 1 ? "d-flex" : "d-none"}>
                         <p className="fs_2sm fw-normal ff_poppins mt-4">Sed nec ultricies felis,

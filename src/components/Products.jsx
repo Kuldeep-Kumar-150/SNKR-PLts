@@ -62,7 +62,7 @@ const Products = () => {
                                     <p className='fs_2sm fw_madium ff_poppins mb-1'>Quickiins Mens Shoes</p>
                                     <p className='fs_2sm fw_madium ff_poppins text_lightgrey mb-0'>$90.00 <span className='text-danger'>$90.00</span></p>
                                 </div>
-                                <div className='ms-2'>
+                                <div className="ms-2">
                                     <a href="#"><img className='cart_icon' src={cartIcon} alt="cart-icon" /></a>
                                 </div>
                             </div>

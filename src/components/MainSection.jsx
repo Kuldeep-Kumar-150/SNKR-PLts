@@ -13,12 +13,12 @@ const MainSection = () => {
         arrows: false,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 700,
         responsive: [
             {
                 breakpoint: 8000,
-                settings:"unslick",
+                settings: "unslick",
             },
             {
                 breakpoint: 1200,
@@ -49,10 +49,9 @@ const MainSection = () => {
         <section>
             <Container>
                 <h2 className='fs_2xl fw-semibold ff_poppins mt-5'>You can buy the Nike Air Max 97 Men's Shoe - White here:</h2>
-
-                <Slider {...settings} className='d-flex row'>
+                <Slider {...settings} className='row'>
                     <Col className='py-5 mb-5'>
-                        <div className="cards_shadow mx-2">
+                        <div className="cards_shadow">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
                                 <img className="w-75" src={footLockerImg} alt="footLockerImg" />
                             </div>
@@ -81,7 +80,7 @@ const MainSection = () => {
                         </div>
                     </Col>
                     <Col className='py-5 mb-5'>
-                        <div className="cards_shadow mx-2">
+                        <div className="cards_shadow">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
                                 <img className="w-75" src={sideStepImg} alt="footLockerImg" />
                             </div>
@@ -110,7 +109,7 @@ const MainSection = () => {
                         </div>
                     </Col>
                     <Col className='py-5 mb-5'>
-                        <div className="cards_shadow mx-2">
+                        <div className="cards_shadow">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
                                 <img className="w-75" src={footLockerImg} alt="footLockerImg" />
                             </div>
@@ -139,7 +138,7 @@ const MainSection = () => {
                         </div>
                     </Col>
                     <Col className='py-5 mb-5'>
-                        <div className="cards_shadow mx-2">
+                        <div className="cards_shadow">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
                                 <img className="w-75" src={sideStepImg} alt="footLockerImg" />
                             </div>
@@ -169,7 +168,7 @@ const MainSection = () => {
                     </Col>
                 </Slider>
             </Container>
-        </section>
+        </section >
     )
 }
 

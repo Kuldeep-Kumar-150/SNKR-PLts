@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import heroShoes from '../assets/image/png/hero-shoes.png'
+// import heroShoes from '../assets/image/png/hero-shoes.png'
 import starGroups from '../assets/image/svg/starGroups.svg'
 import shoes1 from '../assets/image/svg/hero_shoes_1.svg'
 import shoes2 from '../assets/image/svg/hero_shoes_2.svg'
@@ -14,30 +14,33 @@ import googleIcon from '../assets/image/svg/google.svg'
 
 const Header = () => {
     const [plus, setplus] = useState(1)
-    // const first = useRef(second)
+    const [image, setimage] = useState(1)
+    let minus = () => {
+        if (plus === 1) {
+            setplus(1);
+        } else {
+            setplus(plus - 1)
+        }
+    }
     return (
-        <header className='my-5 d-flex flex-column align-items-center justify-content-center flex-grow-1'>
+        <header className='my-5'>
             <Container>
                 <Row className='align-items-center'>
-                    <Col xl={6}>
-                        <img className='w-100' src={heroShoes} alt="heroShoes" />
-                        <Row className='d-none d-lg-flex mt-4'>
-                            <Col sm={3}><img className='w-100' src={shoes1} alt="shoes" /></Col>
-                            <Col sm={3}><img className='w-100' src={shoes2} alt="shoes" /></Col>
-                            <Col sm={3}><img className='w-100' src={shoes3} alt="shoes" /></Col>
-                            <Col sm={3}><img className='w-100' src={shoes4} alt="shoes" /></Col>
-                        </Row>
-                        <div className="overflow-auto scroll_bar_hide d-lg-none">
-                            <div className="overflow_scroll_width mt-4">
-                                <div className='d-flex align-items-center'>
-                                    <img className='mx-2 ms-md-3 mx-md-0 header_shoes_width' src={shoes1} alt="shoes" />
-                                    <img className='mx-2 ms-md-3 mx-md-0 header_shoes_width' src={shoes2} alt="shoes" />
-                                    <img className='mx-2 ms-md-3 mx-md-0 header_shoes_width' src={shoes3} alt="shoes" />
-                                    <img className='mx-2 ms-md-3 mx-md-0 header_shoes_width' src={shoes4} alt="shoes" />
-                                </div>
-                            </div>
+                    <Col xl={6} className=''>
+                        <div className="bg_grey red_headershoes_width">
+                            <img className={image === 2 ? "w-100 h-100 d-inline-block" : "d-none"} src={shoes1} alt="heroShoes" />
+                            <img className={image === 1 ? "w-100 h-100 d-inline-block" : "d-none"} src={shoes2} alt="shoes" />
+                            <img className={image === 3 ? "w-100 h-100 d-inline-block" : "d-none"} src={shoes3} alt="shoes" />
+                            <img className={image === 4 ? "w-100 h-100 d-inline-block" : "d-none"} src={shoes4} alt="shoes" />
                         </div>
+                        <Row className='mt-4'>
+                            <Col xs={3}><img onClick={() => setimage(1)} className='crusor_pointer w-100' src={shoes2} alt="shoes" /></Col>
+                            <Col xs={3}><img onClick={() => setimage(2)} className='crusor_pointer w-100' src={shoes1} alt="shoes" /></Col>
+                            <Col xs={3}><img onClick={() => setimage(3)} className='crusor_pointer w-100' src={shoes3} alt="shoes" /></Col>
+                            <Col xs={3}><img onClick={() => setimage(4)} className='crusor_pointer w-100' src={shoes4} alt="shoes" /></Col>
+                        </Row>
                     </Col>
+
                     <Col xl={6}>
                         <div className=' ps-xl-4'>
                             <h1 className='fs_30 fw-semibold ff_poppins mt-4 mt-xl-0'>PREMIUM MENS SPORTS LATHER KEDS</h1>
@@ -49,10 +52,8 @@ const Header = () => {
                             <div className="d-flex align-items-center">
                                 <p className='fs_lg fw-semibold ff_poppins mb-0'>Qty: </p>
                                 <span className='d-flex align-items-center qty_btn mx-4 py-2'>
-                                    {/* <a className='mb-0 fs_lg fw-normal text-black' href="#">-</a> */}
-                                    <button onClick={() => setplus(plus - 1)} className='mb-0 fs_lg fw-normal text-black border-0 bg-transparent'>-</button>
+                                    <button onClick={(minus)} className='mb-0 fs_lg fw-normal text-black border-0 bg-transparent'>-</button>
                                     <p className='mb-0 px-3'>{plus}</p>
-                                    {/* <a className='mb-0 fs_lg fw-normal text-black' href="#">+</a> */}
                                     <button onClick={() => setplus(plus + 1)} className='mb-0 fs_lg fw-normal text-black border-0 bg-transparent'>+</button>
                                 </span>
                                 <a className='add_cart_btn d-none d-sm-flex' href="#">Add to Cart</a>
