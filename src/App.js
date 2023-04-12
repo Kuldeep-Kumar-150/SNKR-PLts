@@ -13,7 +13,7 @@ import BackToTop from './components/BackToTop';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
-// import Preloader from './components/Preloader';
+import Preloader from './components/Preloader';
 
 function App() {
   useEffect(() => {
@@ -26,7 +26,7 @@ function App() {
     <>
       <MyNavBar />
       <Header />
-      {/* <Preloader /> */}
+      <Preloader />
       <BackToTop />
       <MainSection />
       <Reviews />
