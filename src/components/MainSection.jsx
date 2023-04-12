@@ -10,7 +10,7 @@ const MainSection = () => {
             <Container>
                 <h2 className='fs_2xl fw-semibold ff_poppins mt-5'>You can buy the Nike Air Max 97 Men's Shoe - White here:</h2>
                 <Row className='py-lg-5'>
-                    <Col sm={6} lg={4} xl={3} className='mt-2' data-aos="zoom-out-down">
+                    <Col sm={6} lg={4} xl={3} className='mt-5 mt-lg-1' data-aos="zoom-out-down">
                         <div className="cards_shadow mx-2">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
                                 <img className="w-75" src={footLockerImg} alt="footLockerImg" />
@@ -39,7 +39,7 @@ const MainSection = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col sm={6} lg={4} xl={3} className='mt-2' data-aos="zoom-out-right">
+                    <Col sm={6} lg={4} xl={3} className='mt-5 mt-lg-1' data-aos="zoom-out-right">
                         <div className="cards_shadow mx-2">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
                                 <img className="w-75" src={sideStepImg} alt="footLockerImg" />
@@ -68,7 +68,7 @@ const MainSection = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col sm={6} lg={4} xl={3} className='mt-2' data-aos="zoom-out-left">
+                    <Col sm={6} lg={4} xl={3} className='mt-5 mt-lg-1' data-aos="zoom-out-left">
                         <div className="cards_shadow mx-2">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
                                 <img className="w-75" src={footLockerImg} alt="footLockerImg" />
@@ -97,7 +97,7 @@ const MainSection = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col sm={6} lg={4} xl={3} className='mt-2' data-aos="fade-up">
+                    <Col sm={6} lg={4} xl={3} className='mt-5 mt-lg-1' data-aos="fade-up">
                         <div className="cards_shadow mx-2">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
                                 <img className="w-75" src={sideStepImg} alt="footLockerImg" />

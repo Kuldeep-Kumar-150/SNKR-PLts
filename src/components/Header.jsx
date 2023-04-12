@@ -60,7 +60,7 @@ const Header = () => {
                             </div>
                             <form>
                                 <label className='fs_lg fw-semibold ff_poppins' htmlfor="cars">Size:</label>
-                                <select className='size_option ms-4 mt-3' id="cars" name="cars">
+                                <select className='rounded-5 size_option ms-4 mt-3 fs_lg fw-normal ff_poppins' id="cars" name="cars">
                                     <option value="S">S</option>
                                     <option value="M">M</option>
                                     <option value="L">L</option>
