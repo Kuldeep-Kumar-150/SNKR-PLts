@@ -21,7 +21,7 @@ const MainSection = () => {
                                         <p className='fs_sm fw-normal ff_poppins mb-0'>Price:</p>
                                         <p className='fs_lg fw-semibold ff_poppins mb-0 ms-3'>€179,99</p>
                                     </div>
-                                    <a className='fs_xsm fw-normal ff_poppins text-white bestPrice_btn' href="#">Best Price</a>
+                                    <p className='fs_xsm fw-normal ff_poppins text-white bestPrice_btn mb-0'>Best Price</p>
                                 </div>
                                 <p className='fs_sm fw-normal ff_poppins mb-2'>Size:</p>
                                 <div className='d-flex align-items-center justify-content-around'>
@@ -50,7 +50,7 @@ const MainSection = () => {
                                         <p className='fs_sm fw-normal ff_poppins mb-0'>Price:</p>
                                         <p className='fs_lg fw-semibold ff_poppins mb-0 ms-3'>€179,99</p>
                                     </div>
-                                    <a className='fs_xsm fw-normal ff_poppins text-white bestPrice_btn' href="#">Best Price</a>
+                                    <p className='fs_xsm fw-normal ff_poppins text-white bestPrice_btn mb-0'>Best Price</p>
                                 </div>
                                 <p className='fs_sm fw-normal ff_poppins mb-2'>Size:</p>
                                 <div className='d-flex align-items-center justify-content-around'>
@@ -79,7 +79,7 @@ const MainSection = () => {
                                         <p className='fs_sm fw-normal ff_poppins mb-0'>Price:</p>
                                         <p className='fs_lg fw-semibold ff_poppins mb-0 ms-3'>€179,99</p>
                                     </div>
-                                    <a className='fs_xsm fw-normal ff_poppins text-white bestPrice_btn' href="#">Best Price</a>
+                                    <p className='fs_xsm fw-normal ff_poppins text-white bestPrice_btn mb-0'>Best Price</p>
                                 </div>
                                 <p className='fs_sm fw-normal ff_poppins mb-2'>Size:</p>
                                 <div className='d-flex align-items-center justify-content-around'>
@@ -108,7 +108,7 @@ const MainSection = () => {
                                         <p className='fs_sm fw-normal ff_poppins mb-0'>Price:</p>
                                         <p className='fs_lg fw-semibold ff_poppins mb-0 ms-3'>€179,99</p>
                                     </div>
-                                    <a className='fs_xsm fw-normal ff_poppins text-white bestPrice_btn' href="#">Best Price</a>
+                                    <p className='fs_xsm fw-normal ff_poppins text-white bestPrice_btn mb-0'>Best Price</p>
                                 </div>
                                 <p className='fs_sm fw-normal ff_poppins mb-2'>Size:</p>
                                 <div className='d-flex align-items-center justify-content-around'>

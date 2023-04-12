@@ -168,10 +168,10 @@ select {
     transition: 0.3s ease-in-out;
 }
 
-.bestPrice_btn:hover {
+/* .bestPrice_btn:hover {
     background-color: transparent;
     color: #28A745 !important;
-}
+} */
 
 .size_btn {
     background: #FFFFFF;
