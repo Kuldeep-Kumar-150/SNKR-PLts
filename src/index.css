@@ -4,8 +4,8 @@
   --fs-sm: 16px;
   --fs-2sm: 18px;
   --fs-lg: 17px;
-  --fs-xl: 24px;
-  --fs-2xl: 25px;
+  --fs-xl: 16px;
+  --fs-2xl: 20px;
   --fs-30: 25px;
   --fs-35: 35px;
 }
@@ -53,8 +53,6 @@
 .ff_roboto {
   font-family: 'Roboto', sans-serif;
 }
-
-
 @media (min-width:576px) {
   :root {
     --fs-xsm: 10px;

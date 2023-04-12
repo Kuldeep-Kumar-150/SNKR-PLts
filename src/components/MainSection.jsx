@@ -2,56 +2,16 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import footLockerImg from '../assets/image/png/foot_locker.png'
 import sideStepImg from '../assets/image/png/side_step.png'
-import Slider from "react-slick";
 
 
 const MainSection = () => {
-    var settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        arrows: false,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        // autoplay: true,
-        autoplaySpeed: 700,
-        responsive: [
-            {
-                breakpoint: 8000,
-                settings: "unslick",
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
     return (
-        <section>
+        <section className='mb-5 pt-lg-2'>
             <Container>
                 <h2 className='fs_2xl fw-semibold ff_poppins mt-5'>You can buy the Nike Air Max 97 Men's Shoe - White here:</h2>
-                <Slider {...settings} className='row'>
-                    <Col className='py-5 mb-5'>
-                        <div className="cards_shadow">
+                <Row className='py-lg-5'>
+                    <Col sm={6} lg={4} xl={3} className='mt-2' data-aos="zoom-out-down">
+                        <div className="cards_shadow mx-2">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
                                 <img className="w-75" src={footLockerImg} alt="footLockerImg" />
                             </div>
@@ -75,12 +35,12 @@ const MainSection = () => {
                                     <button className='size_btn fs_sm ff_poppins text-black'>46</button>
                                 </div>
                                 <p className='fs_sm fw-normal ff_poppins mt-3 mb-0'>View this product as:</p>
-                                <p className='fs_sm fw-semibold ff_poppins text-primary mb-0 mt-2'>Foot Locker NL</p>
+                                <button className='fs_sm fw-semibold ff_poppins text-primary mb-0 mt-2 bg-transparent border-0'>Foot Locker NL</button>
                             </div>
                         </div>
                     </Col>
-                    <Col className='py-5 mb-5'>
-                        <div className="cards_shadow">
+                    <Col sm={6} lg={4} xl={3} className='mt-2' data-aos="zoom-out-right">
+                        <div className="cards_shadow mx-2">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
                                 <img className="w-75" src={sideStepImg} alt="footLockerImg" />
                             </div>
@@ -104,12 +64,12 @@ const MainSection = () => {
                                     <button className='size_btn fs_sm ff_poppins text-black'>46</button>
                                 </div>
                                 <p className='fs_sm fw-normal ff_poppins mt-3 mb-0'>View this product as:</p>
-                                <p className='fs_sm fw-semibold ff_poppins text-primary mb-0 mt-2'>Foot Locker NL</p>
+                                <button className='fs_sm fw-semibold ff_poppins text-primary mb-0 mt-2 bg-transparent border-0'>Foot Locker NL</button>
                             </div>
                         </div>
                     </Col>
-                    <Col className='py-5 mb-5'>
-                        <div className="cards_shadow">
+                    <Col sm={6} lg={4} xl={3} className='mt-2' data-aos="zoom-out-left">
+                        <div className="cards_shadow mx-2">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
                                 <img className="w-75" src={footLockerImg} alt="footLockerImg" />
                             </div>
@@ -133,12 +93,12 @@ const MainSection = () => {
                                     <button className='size_btn fs_sm ff_poppins text-black'>46</button>
                                 </div>
                                 <p className='fs_sm fw-normal ff_poppins mt-3 mb-0'>View this product as:</p>
-                                <p className='fs_sm fw-semibold ff_poppins text-primary mb-0 mt-2'>Foot Locker NL</p>
+                                <button className='fs_sm fw-semibold ff_poppins text-primary mb-0 mt-2 bg-transparent border-0'>Foot Locker NL</button>
                             </div>
                         </div>
                     </Col>
-                    <Col className='py-5 mb-5'>
-                        <div className="cards_shadow">
+                    <Col sm={6} lg={4} xl={3} className='mt-2' data-aos="fade-up">
+                        <div className="cards_shadow mx-2">
                             <div className="footlocker_img_border d-flex justify-content-center p-3">
                                 <img className="w-75" src={sideStepImg} alt="footLockerImg" />
                             </div>
@@ -162,11 +122,11 @@ const MainSection = () => {
                                     <button className='size_btn fs_sm ff_poppins text-black'>46</button>
                                 </div>
                                 <p className='fs_sm fw-normal ff_poppins mt-3 mb-0'>View this product as:</p>
-                                <p className='fs_sm fw-semibold ff_poppins text-primary mb-0 mt-2'>Foot Locker NL</p>
+                                <button className='fs_sm fw-semibold ff_poppins text-primary mb-0 mt-2 bg-transparent border-0'>Foot Locker NL</button>
                             </div>
                         </div>
                     </Col>
-                </Slider>
+                </Row>
             </Container>
         </section >
     )
