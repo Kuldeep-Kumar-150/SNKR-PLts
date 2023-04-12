@@ -168,11 +168,6 @@ select {
     transition: 0.3s ease-in-out;
 }
 
-/* .bestPrice_btn:hover {
-    background-color: transparent;
-    color: #28A745 !important;
-} */
-
 .size_btn {
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -258,11 +253,12 @@ ul {
 
 .nexT_icon {
     color: #555555;
-    height: 47px;
-    width: 112px;
+    height: 43px;
+    width: 92px;
     background: #FFFFFF;
     border: 1px solid #9C9C9C;
     border-radius: 9px;
+    transition: 0.4s linear;
 }
 
 .nexT_icon:hover {

@@ -234,7 +234,7 @@ const Products = () => {
                     <button onClick={() => setbtn(0)} className={btn === 0 ? "fs_xl fw-semibold ff_poppins border-0 me-2 active_page" : "fs_xl fw-semibold ff_poppins nexT_page_icon border-0 me-2"}>1</button>
                     <button onClick={() => setbtn(1)} className={btn === 1 ? "fs_xl fw-semibold ff_poppins border-0 me-2 active_page" : "fs_xl fw-semibold ff_poppins nexT_page_icon border-0 me-2"}>2</button>
                     <button onClick={() => setbtn(2)} className={btn === 2 ? "fs_xl fw-semibold ff_poppins border-0 me-2 active_page" : "fs_xl fw-semibold ff_poppins nexT_page_icon border-0 me-2"}>3</button>
-                    <button onClick={() => setbtn(btn + 1)} className={btn === 2 ? "d-none" : "fs_ms fw-light ff_poppins nexT_icon px-3"}>Next&gt;&gt;</button>
+                    <button onClick={() => setbtn(btn + 1)} className={btn === 2 ? "d-none" : "fs_ms fw-light ff_poppins nexT_icon"}>Next&gt;&gt;</button>
                 </div>
             </Container>
 
