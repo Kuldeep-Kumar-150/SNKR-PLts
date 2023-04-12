@@ -53,7 +53,7 @@ const Header = () => {
                                 <p className='fs_lg fw-semibold ff_poppins mb-0'>Qty: </p>
                                 <span className='d-flex align-items-center qty_btn mx-4 py-2'>
                                     <button onClick={(minus)} className='mb-0 fs_lg fw-normal text-black border-0 bg-transparent'>-</button>
-                                    <p className='mb-0 px-3'>{plus}</p>
+                                    <p className='mb-0 px-3 ff_poppins fw-normal'>{plus}</p>
                                     <button onClick={() => setplus(plus + 1)} className='mb-0 fs_lg fw-normal text-black border-0 bg-transparent'>+</button>
                                 </span>
                                 <a className='add_cart_btn d-none d-sm-flex' href="#">Add to Cart</a>
